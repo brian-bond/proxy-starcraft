@@ -13,20 +13,12 @@ namespace Sandbox
 {
     class Program
     {
-<<<<<<< HEAD
-        // TODO: Fix hardcoded path
-        private const string BASE_GAME_PATH = "C:/Program Files (x86)/StarCraft II";
-
-        private const string GAME_EXECUTABLE_PATH = BASE_GAME_PATH + "/Support64/SC2Switcher_x64.exe";
-        private const string GAME_EXECUTABLE_ARGS = "-sso=1 -launch -uid s2_enus -listen 127.0.0.1 -port 5000 -win";
-=======
         // TODO: Fix hardcoded path - get from $USER\Documents\Starcraft II\ExecuteInfo.txt
-        private const string BASE_GAME_PATH = "D:/Program Files (x86)/StarCraft II";
+        private const string BASE_GAME_PATH = "C:/Program Files (x86)/StarCraft II";
         private const string GAME_EXECUTABLE_PATH = BASE_GAME_PATH + "/Versions/Base58400/SC2_x64.exe"; //"/Support64/SC2Switcher_x64.exe";
         private const string GAME_EXECUTABLE_ARGS_BASE = "-sso=1 -launch -uid s2_enus -listen 127.0.0.1 -displayMode 0";
         private const string GAME_EXECUTABLE_ARGS_PLAYER1 = GAME_EXECUTABLE_ARGS_BASE + " -port 5000";
         private const string GAME_EXECUTABLE_ARGS_PLAYER2 = GAME_EXECUTABLE_ARGS_BASE + " -port 5001";
->>>>>>> d575ac9674c1bfa70767f8f1f1f17e22e60108b8
 
         private const string MARINE_MICRO_MAP_PATH = BASE_GAME_PATH + "/maps/Example/MarineMicro.SC2Map";
         private const string EMPTY_MAP_PATH = BASE_GAME_PATH + "/maps/Test/Empty.SC2Map";
