@@ -16,7 +16,7 @@ namespace Sandbox
     class Program
     {
         // TODO: Fix hardcoded path
-        private const string BASE_GAME_PATH = "D:/Program Files (x86)/StarCraft II";
+        private const string BASE_GAME_PATH = "C:/Program Files (x86)/StarCraft II";
 
         private const string GAME_EXECUTABLE_PATH = BASE_GAME_PATH + "/Support64/SC2Switcher_x64.exe";
         private const string GAME_EXECUTABLE_ARGS = "-sso=1 -launch -uid s2_enus -listen 127.0.0.1 -port 5000 -win";
@@ -146,22 +146,22 @@ namespace Sandbox
 
             using (var pathingGrid = GetImage(gameState.MapData.PathingGrid))
             {
-                pathingGrid.Save("D:/Temp/pathing.bmp");
+                //pathingGrid.Save("D:/Temp/pathing.bmp");
             }
 
             using (var placementGrid = GetImage(gameState.MapData.PlacementGrid))
             {
-                placementGrid.Save("D:/Temp/placement.bmp");
+                //placementGrid.Save("D:/Temp/placement.bmp");
             }
 
             using (var terrainHeight = GetImage(gameState.MapData.HeightGrid))
             {
-                terrainHeight.Save("D:/Temp/terrain-height.bmp");
+                //terrainHeight.Save("D:/Temp/terrain-height.bmp");
             }
             
             using (var areasBitmap = GetImage(gameState.MapData.AreaGrid))
             {
-                areasBitmap.Save("D:/Temp/areas.bmp");
+                //areasBitmap.Save("D:/Temp/areas.bmp");
             }
             
             while (true)
